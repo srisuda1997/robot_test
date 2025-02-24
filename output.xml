@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.9 on win32)" generated="20250224 14:56:44.354" rpa="false" schemaversion="3">
+<suite id="s1" name="Index" source="C:\Users\User\robot_test\testcases\index.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20250224 14:56:44.613" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<status status="PASS" starttime="20250224 14:56:44.613" endtime="20250224 14:56:47.253"/>
+</kw>
+<test id="s1-t1" name="step2 click Apply for membership button" line="9">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20250224 14:56:47.255" endtime="20250224 14:56:47.298"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/button[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250224 14:56:47.301" endtime="20250224 14:56:48.730"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:48.736" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[2]/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20250224 14:56:48.733" endtime="20250224 14:56:52.476"/>
+</kw>
+<status status="PASS" starttime="20250224 14:56:47.253" endtime="20250224 14:56:52.478"/>
+</test>
+<test id="s1-t2" name="step3" line="14">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name= email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:52.481" level="INFO">Typing text 'srisuza55@gmail.com' into text field 'name= email'.</msg>
+<status status="PASS" starttime="20250224 14:56:52.479" endtime="20250224 14:56:52.888"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=firstName</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:52.889" level="INFO">Typing text 'srisuda' into text field 'name=firstName'.</msg>
+<status status="PASS" starttime="20250224 14:56:52.889" endtime="20250224 14:56:53.011"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=lastName</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.012" level="INFO">Typing text 'sonta' into text field 'name=lastName'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.012" endtime="20250224 14:56:53.112"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=phoneNumber</arg>
+<arg>${phoneNumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.114" level="INFO">Typing text '0984535759' into text field 'name=phoneNumber'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.112" endtime="20250224 14:56:53.239"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=newPassword</arg>
+<arg>${newPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.241" level="INFO">Typing text 'sS121040' into text field 'name=newPassword'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.239" endtime="20250224 14:56:53.337"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=confirmPassword</arg>
+<arg>${confirmPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.338" level="INFO">Typing text 'sS121040' into text field 'name=confirmPassword'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.337" endtime="20250224 14:56:53.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@type='checkbox' and @name='consent']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.462" level="INFO">Clicking element 'xpath=//input[@type='checkbox' and @name='consent']'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.462" endtime="20250224 14:56:53.542"/>
+</kw>
+<status status="PASS" starttime="20250224 14:56:52.479" endtime="20250224 14:56:53.542"/>
+</test>
+<test id="s1-t3" name="step4-step5 click Apply for membership button" line="23">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250224 14:56:53.544" endtime="20250224 14:56:53.569"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250224 14:56:53.570" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button'.</msg>
+<status status="PASS" starttime="20250224 14:56:53.570" endtime="20250224 14:56:53.686"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250224 14:56:58.688" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250224 14:56:53.686" endtime="20250224 14:56:58.688"/>
+</kw>
+<status status="PASS" starttime="20250224 14:56:53.543" endtime="20250224 14:56:58.689"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20250224 14:56:58.694" endtime="20250224 14:57:01.096"/>
+</kw>
+<status status="PASS" starttime="20250224 14:56:44.356" endtime="20250224 14:57:01.096"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Index">Index</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
